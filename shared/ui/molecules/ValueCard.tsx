@@ -43,7 +43,7 @@ function UsersIcon() {
 
 export function ValueCard({ title, description, icon }: ValueCardProps) {
   return (
-    <article className="rounded-2xl border border-slate-800 bg-surface/50 p-6">
+    <article className="h-full rounded-2xl border border-slate-800 bg-surface/50 p-6 transition-[transform,box-shadow] duration-200 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-brand/10">
       <div className="mb-4 flex items-center gap-3">
         <span className="text-brand">{icon === "heart" ? <HeartIcon /> : <UsersIcon />}</span>
         <h3 className="text-lg font-semibold text-slate-100">{title}</h3>

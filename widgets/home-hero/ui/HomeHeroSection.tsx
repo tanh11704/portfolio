@@ -18,6 +18,7 @@ export function HomeHeroSection() {
       avatarAlt={`${profileData.name} Avatar`}
       reliabilityLabel={profileData.reliabilityLabel}
       reliabilityValue={profileData.reliabilityValue}
+      resumeFile={profileData.resumeFile}
     />
   );
 }
