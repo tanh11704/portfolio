@@ -34,18 +34,6 @@ export function ScrollSpyProvider({
   const idKey = sectionIds.join(",");
 
   useEffect(() => {
-    if (!enabled) {
-      setActiveSectionId("");
-      return;
-    }
-
-    const initial = window.location.hash.slice(1);
-    if (initial && sectionIds.includes(initial)) {
-      setActiveSectionId(initial);
-    }
-  }, [enabled, idKey, sectionIds]);
-
-  useEffect(() => {
     if (!enabled || sectionIds.length === 0) return;
 
     const elements = sectionIds
