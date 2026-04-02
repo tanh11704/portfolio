@@ -43,7 +43,9 @@ export function NavItem({ href, label }: NavItemProps) {
   const scrollMatches = Boolean(
     sectionId && pathMatches && activeSectionId === sectionId,
   );
-  const hashMatches = Boolean(hasHash && pathMatches && currentHash === targetHash);
+  const hashMatches = Boolean(
+    hasHash && pathMatches && !activeSectionId && currentHash === targetHash,
+  );
   const isActive = hasHash ? scrollMatches || hashMatches : pathMatches;
 
   return (

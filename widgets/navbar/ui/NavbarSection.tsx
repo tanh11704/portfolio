@@ -3,6 +3,7 @@ import { SiteNavbar } from "@/shared/ui/organisms/SiteNavbar";
 import type { NavbarLink } from "@/shared/ui/molecules/NavbarLinks";
 
 const navLinks: NavbarLink[] = [
+  { href: "/#home", label: "Overview" },
   { href: "/#about", label: "About" },
   { href: "/projects", label: "Projects" },
   { href: "/stack", label: "Stack" },

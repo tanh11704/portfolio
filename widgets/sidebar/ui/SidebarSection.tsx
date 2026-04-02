@@ -108,9 +108,18 @@ export function SidebarSection() {
     if (item.match === "path") {
       return routePathMatches(pathname, item.href);
     }
+
     const id = item.sectionId;
     if (!id) return false;
-    if (normalizeRoutePath(pathname) !== "/") return false;
+
+    const isHomeRoute = normalizeRoutePath(pathname) === "/";
+    if (!isHomeRoute) return false;
+
+    if (id === "home") {
+      if (!activeSectionId) return true;
+      return activeSectionId === "home" || activeSectionId === "about";
+    }
+
     if (activeSectionId && activeSectionId === id) return true;
     const h = hash.slice(1);
     return Boolean(h && h === id);

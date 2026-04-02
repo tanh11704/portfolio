@@ -130,9 +130,9 @@ export const profileData: ProfileData = {
   contactPageTitle: "Get in touch",
   contactPageDescription:
     "Whether you are hiring, exploring collaboration, or want to talk architecture — send a message. I usually reply within a few business days.",
-  email: "phuocanh.dev@example.com",
-  phone: "+84 (0) 90 000 0000",
-  location: "Ho Chi Minh City, Vietnam",
-  githubUrl: "https://github.com",
-  linkedinUrl: "https://www.linkedin.com",
+  email: "anhtp117@gmail.com",
+  phone: "+84 (0) 773 605 741",
+  location: "Da Nang City, Vietnam",
+  githubUrl: "https://github.com/tanh11704",
+  linkedinUrl: "https://www.linkedin.com/tanh11704",
 };

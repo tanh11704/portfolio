@@ -98,12 +98,18 @@ export function ProjectsListView({ badge, title, description, items }: ProjectsL
               <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-400">{project.summary}</p>
 
               <div className="mt-5 flex flex-wrap gap-3 border-t border-slate-800/80 pt-4">
+                <Link
+                  href={`/projects/${project.slug}`}
+                  className="text-sm font-semibold text-brand transition hover:text-blue-400"
+                >
+                  Project details
+                </Link>
                 {project.liveHref ? (
                   <Link
                     href={project.liveHref}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-sm font-semibold text-brand transition hover:text-blue-400"
+                    className="text-sm font-semibold text-brand/80 transition hover:text-brand"
                   >
                     Live demo
                   </Link>
